@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mantasha Tehreem — Full-Stack Developer</title>
+<style>
+:root{--bg:#0b1020;--surface:#131a30;--border:#242d4a;--text:#eef1fb;--muted:#9aa4c4;--a1:#5eead4;--a2:#a78bfa;--btn-text:#0b1020;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f7fc;--surface:#fff;--border:#dfe3f2;--text:#141a33;--muted:#5a6384;--a1:#0d9488;--a2:#7c3aed;--btn-text:#fff}}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--border)}
+nav{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;letter-spacing:.5px;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav a.cta,.btn{background:linear-gradient(90deg,var(--a1),var(--a2));color:var(--btn-text);padding:10px 20px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+.hero{position:relative;padding:70px 0 50px;overflow:hidden}
+.hero>*:not(.hero3d){position:relative;z-index:1}
+.hero3d{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.7}
+@media (max-width:700px){.hero3d{opacity:.4}}
+main,footer{position:relative;z-index:1}
+.hero3d canvas{width:100%;height:100%;display:block}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--border);background:var(--surface);color:var(--muted);padding:6px 14px;border-radius:999px;font-size:14px}
+.badge i{width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block}
+h1{font-size:clamp(34px,8vw,58px);line-height:1.1;margin:20px 0 12px}
+h1 span{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:clamp(17px,3.5vw,21px);color:var(--muted);max-width:620px}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+section{padding:50px 0;border-top:1px solid var(--border)}
+.eyebrow{color:var(--a1);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+h2{font-size:clamp(26px,5.5vw,36px);margin:8px 0 18px;line-height:1.2}
+p{color:var(--muted);margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px;margin-bottom:18px}
+.card h3{margin:0 0 8px;font-size:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.tag{border:1px solid var(--border);border-radius:999px;padding:5px 13px;font-size:14px;color:var(--muted)}
+.card a.link{color:var(--a1);font-weight:700;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.grid .card{margin:0}
+ul{margin:0;padding-left:20px;color:var(--muted)}
+li{margin-bottom:6px}
+footer{padding:30px 0 40px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="hero3d" id="hero3d" aria-hidden="true"></div>
+<header><div class="wrap"><nav><span class="logo">MT</span><a class="cta" href="#contact">Hire Me</a></nav></div></header>
+<main class="wrap">
+<div class="hero">
+<span class="badge"><i></i>Available for freelance projects</span>
+<h1>Hi, I’m <span>Mantasha Tehreem</span></h1>
+<p class="sub">Full-stack developer building fast, modern websites and AI-powered web apps with React, Next.js, Flask and Python. Based in New Delhi, working with clients worldwide.</p>
+<div class="row"><a class="btn" href="#work">View My Work</a><a class="btn ghost" href="#contact">Get in Touch</a></div>
+</div>
+
+<section id="about">
+<div class="eyebrow">About</div>
+<h2>I build products that people can actually use</h2>
+<p>I’m a solo full-stack developer and a BCA student, working toward independent freelance income. I like taking an idea all the way from design to a deployed product: clean UI, reliable backend, and AI where it genuinely helps.</p>
+<p>I work directly with founders and small teams, communicate clearly, and ship working software.</p>
+</section>
+
+<section id="work">
+<div class="eyebrow">Featured Work</div>
+<h2>Projects</h2>
+<div class="card">
+<div class="tags"><span class="tag">Flagship</span><span class="tag">Live</span></div>
+<h3>World Learn</h3>
+<p>An AI-powered, multilingual e-learning progressive web app, designed and built end to end by me. Learners get an installable, fast experience in their own language.</p>
+<div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Python / Flask</span><span class="tag">AI APIs</span><span class="tag">PWA</span></div>
+<a class="link" href="https://mantasha-world-learn.vercel.app" target="_blank" rel="noopener">View live project →</a>
+</div>
+<div class="card">
+<div class="tags"><span class="tag">In progress</span></div>
+<h3>Freelance Proposal Writer</h3>
+<p>Paste a job description and get a tailored, ready-to-send proposal. Built for freelancers who want to apply faster and with better quality.</p>
+<div class="tags"><span class="tag">Next.js</span><span class="tag">Flask</span><span class="tag">LLM API</span></div>
+</div>
+<div class="card">
+<div class="tags"><span class="tag">Demo concept</span><span class="tag">Café website</span></div>
+<h3>Chai Chowk Café</h3>
+<p>A concept website for a roadside café, built as a sample for local food businesses. It has a hero with call-to-action buttons, signature dishes, an about section, a busiest-hours chart, and location and contact details. All names, ratings and contact details are sample data.</p>
+<div class="tags"><span class="tag">Responsive design</span><span class="tag">Landing page</span><span class="tag">Local business</span></div>
+<a class="link" href="https://chai-chowk-demo.vercel.app" target="_blank" rel="noopener">View demo →</a>
+</div>
+</section>
+
+<section id="skills">
+<div class="eyebrow">Skills</div>
+<h2>Toolkit</h2>
+<div class="grid">
+<div class="card"><h3>Frontend</h3><div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">HTML / CSS</span><span class="tag">PWA</span></div></div>
+<div class="card"><h3>Backend</h3><div class="tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">REST APIs</span></div></div>
+<div class="card"><h3>What I offer</h3><ul><li>Business websites and landing pages</li><li>Full-stack web apps</li><li>AI feature integration</li><li>Deployment on Vercel</li></ul></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="eyebrow">Get in touch</div>
+<h2>Let’s build something together</h2>
+<p>Have a project in mind or need a developer who ships? I’d love to hear from you.</p>
+<div class="row">
+<a class="btn" href="mailto:tehreemwebdev@gmail.com">tehreemwebdev@gmail.com</a>
+<a class="btn ghost" href="https://www.linkedin.com/in/mantasha-tehreem-34335540b" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Mantasha Tehreem · New Delhi, India</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+try{
+var box=document.getElementById('hero3d');
+if(!box||!window.THREE)return;
+var T=THREE;
+var t=document.createElement('canvas');
+if(!(t.getContext('webgl')||t.getContext('experimental-webgl')))return;
+var r=new T.WebGLRenderer({alpha:true,antialias:true});
+r.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+box.appendChild(r.domElement);
+var scene=new T.Scene();
+var cam=new T.PerspectiveCamera(45,1,0.1,100);cam.position.z=7;
+var knot=new T.Mesh(new T.IcosahedronGeometry(1.5,2),new T.MeshStandardMaterial({metalness:0.55,roughness:0.28,transparent:true,opacity:0.95}));
+var ico=new T.Mesh(new T.TorusGeometry(2.4,0.02,16,160),new T.MeshBasicMaterial({transparent:true,opacity:0.7}));
+ico.rotation.x=1.2;
+var ring2=new T.Mesh(new T.TorusGeometry(2.9,0.012,16,160),new T.MeshBasicMaterial({color:0x94a3b8,transparent:true,opacity:0.4}));
+ring2.rotation.set(0.5,0.9,0);
+var pc=140,pp=new Float32Array(pc*3);
+for(var i=0;i<pc;i++){var a=Math.random()*6.283,b=Math.acos(2*Math.random()-1),d=3+Math.random()*2.2;pp[i*3]=d*Math.sin(b)*Math.cos(a);pp[i*3+1]=d*Math.sin(b)*Math.sin(a);pp[i*3+2]=d*Math.cos(b);}
+var pg=new T.BufferGeometry();pg.setAttribute('position',new T.BufferAttribute(pp,3));
+var pts=new T.Points(pg,new T.PointsMaterial({size:0.04,transparent:true,opacity:0.7,color:0x94a3b8}));
+var g=new T.Group();g.add(knot);g.add(ico);g.add(ring2);g.add(pts);scene.add(g);
+scene.add(new T.AmbientLight(0xffffff,0.55));
+var l1=new T.PointLight(0x5eead4,1.2,40);l1.position.set(-5,4,6);scene.add(l1);
+var l2=new T.PointLight(0xa78bfa,1.2,40);l2.position.set(5,-3,5);scene.add(l2);
+function colors(){var s=getComputedStyle(document.documentElement);knot.material.color.set(s.getPropertyValue('--a1').trim()||'#5eead4');ico.material.color.set(s.getPropertyValue('--a2').trim()||'#a78bfa');}
+colors();
+function draw(){r.render(scene,cam);}
+if(window.matchMedia){matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){colors();draw();});}
+function size(){var w=box.clientWidth,h=box.clientHeight;if(!w||!h)return;r.setSize(w,h,false);cam.aspect=w/h;bx=w>700?2.6:1.1;g.scale.setScalar(w>700?1:0.75);cam.updateProjectionMatrix();}
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var visible=true,raf,bx=2.6,sp=0;
+function loop(){g.rotation.y+=0.0025;knot.rotation.x+=0.003;ico.rotation.z+=0.004;ring2.rotation.z-=0.002;g.position.x=bx*Math.cos(sp*9.4);g.position.y=Math.sin(Date.now()/1600)*0.15-sp*1.2;g.rotation.y+=sp*0.01;draw();if(visible&&!reduce){raf=requestAnimationFrame(loop);}}
+size();draw();
+window.addEventListener('resize',function(){size();draw();});
+window.addEventListener('scroll',function(){var m=document.documentElement.scrollHeight-innerHeight;sp=m>0?Math.min(1,Math.max(0,scrollY/m)):0;},{passive:true});
+if(!reduce){
+if('IntersectionObserver' in window){new IntersectionObserver(function(e){visible=e[0].isIntersecting;if(visible){cancelAnimationFrame(raf);loop();}}).observe(box);}
+loop();
+}
+}catch(e){}
+})();
+</script>
+</body>
+</html>
